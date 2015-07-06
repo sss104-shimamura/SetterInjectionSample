@@ -1,0 +1,9 @@
+<bean id="yamada" class="com.techscore.spring.di.Person">
+  <property name="name">
+    <value>Yamada Taro</value>
+  </property>
+  <property name="player">
+    <ref bean="player"/>
+  </property>
+</bean>
+<bean id="player" class="com.techscore.spring.di.Player"/>
